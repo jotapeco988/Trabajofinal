@@ -1,9 +1,18 @@
 import pandas as pd
 from data.data1 import apartamento1,apartamento2
 from helpers.crearTablasHTML import crearTabla
-from helpers.crearBarras import graficarPromedioSalarial
+from helpers.crearBarras import graficarnose
+
+
 
 tabla=pd.read_csv("./data/Siembras.csv")
+barras=pd.read_csv("./data/Siembras.csv")
+dataFrame= barras
+
+campox = 'Nombre comun'
+campoy = 'Arboles'
+nombreGrafica = 'grafica_barras'
+graficarnose(dataFrame, campox, campoy, nombreGrafica)
 
 #EFECTUANDO FILTROS CON PYTHON
 
